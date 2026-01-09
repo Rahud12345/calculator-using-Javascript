@@ -1,0 +1,79 @@
+/*  body styling*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+/*Calulator containor class styling*/
+.calculator {
+  width: 340px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin:50px 2px 3px;
+ 
+}
+/*styling of display class*/
+#display {
+  width: 332px;
+  height: 60px;
+  font-size: 32px;
+  text-align: right;
+  border: 0px solid #ccc;
+  border-radius: 5px 5px 0px 0px; 
+  padding: 4px;
+  background-color: black;
+  color: white;
+}
+/*styling for button*/
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ddd; 
+}
+.buttons > * {
+  flex: 1 6 calc(25% - 10px);
+ 
+}
+button {
+    background: #fff;
+    border: none;
+    width: 70px; 
+    height: 70px; 
+    padding:5px 5px 8px 3px; 
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 50%; 
+     margin:14px 4px 7px 5px; 
+  } 
+
+button:hover {
+  background:#cce1ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition: background 0.3s;
+}
+/*give special styling to button"+" */
+button:nth-child(16) {
+  background: #ff9500;/*give organe color to button*/
+  color: #fff;
+
+}
+button:nth-child(16):hover {
+  background: #ff7b00;
+}
+
+ #btnclear {
+    height: 60px;
+    width: 60px;
+   
+    margin: 25px 120px 19px 130px;
+    border: none;
+    text-align: center; /* Center the text */
+ 
+}
+
